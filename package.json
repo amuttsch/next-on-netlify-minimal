@@ -1,0 +1,15 @@
+{
+  "name": "next-on-netlify-ssr",
+  "scripts": {
+    "clean": "rm -rf .next && rm -rf out_functions && rm -rf out_publish",
+    "build": "yarn run clean && next build && next-on-netlify",
+    "netlify:local": "yarn run clean && next build && next-on-netlify && netlify dev",
+    "netlify:deploy": "yarn run clean && next build && next-on-netlify && netlify deploy -s d50e46ca-07d1-4370-b014-ff4336607bc9 -d out_publish -f out_functions --prod"
+  },
+  "dependencies": {
+    "next": "9.5.3",
+    "next-on-netlify": "2.4.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  }
+}

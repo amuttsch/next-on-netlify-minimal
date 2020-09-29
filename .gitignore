@@ -1,0 +1,17 @@
+node_modules
+.idea
+lib
+.cache
+.next
+.npmrc
+.DS_Store
+.vscode/
+coverage/
+.out
+.code-quality.json
+local.log
+.results/
+webpack-bundle-report.html
+.netlify
+out_functions
+out_publish
